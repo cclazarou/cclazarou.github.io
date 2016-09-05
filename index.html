@@ -9,9 +9,8 @@
   <header>
 
 <!-- TITLE -->
-    <hgroup>
+
       <h1>Learning the Electribe 2</h1>
-    </hgroup>
 
     <nav>
       <ul>
@@ -27,27 +26,27 @@
 
 <!-- INTRO -->
   <section>
-    <hgroup><h2>Introduction</h2></hgroup>
+    <h2>Introduction</h2>
     <p>The Korg Electribe 2 is a popular music production station/sampler/sequencer.  It comes with a large bank of "radio ready" preset sounds, and seems to lost a little cred amongst underground electronic and noise musicians because of its ability to provide pre-baked compositions.  However, it has fairly granular controls over sound for a cheap-ish workstation, and I've really enjoyed using it to become more comfortable with sequencing in composition.</p>
     <p>This blog is a compilation of my expansions on the Electribe user manuals, as well as an exploration the workflow that works for me.</p>
   </section>
 
 <!-- DEMO -->
   <section>
-    <hgroup><h2>What it can do</h2></hgroup>
+    <h2>What it can do</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/6TELjVbCq1Y" frameborder="0" allowfullscreen></iframe>
-    </iframe>
+    <!-- frameborder is deprecated, although it is what YouTube provides as embed code.  Use CSS once we get to that curriculum -->
   </section>
 
   <main>
 
 <!-- ARTICLES -->
     <article>
-      <hgroup><h2>IFX vs. MFX</h2><hgroup>
+      <h2>IFX vs. MFX</h2>
       <p>The Electribe allows each user to add effects in two ways: IFX (insert effects) or MFX (master effects) </p>
 
-      <hgroup><h3>IFX</h3></hgroup>
-      <p>You can add an effect to a Part by doing the following:
+      <h3>IFX</h3>
+      <p>You can add an effect to a Part by doing the following:</p>
         <ol>
           <li>Press the Trigger button</li>
           <li>On the Trigger Pad, press the Part that you'd like to apply the IFX to</li>
@@ -55,10 +54,10 @@
           <li>Use the Insert FX pot to select the effect you prefer</li>
           <li>Use the Edit pot (under the Insert FX pot) to select the dry/wet ratio.  It's listed as a number as if it's a level, but dry/wet is implied.</li>
         </ol>
-      </p>
+
       <p>An Insert Effect is added to the singular Part before its audio hits the main audio outputs.  You can assign one insert effect per Part.</p>
 
-      <hgroup><h3>MFX</h3></hgroup>
+      <h3>MFX</h3>
       <p>You can add an effect to a Part or multiple Parts by sending it to the MFX bus:</p>
       <ol>
         <li>Press the Trigger button</li>
@@ -72,18 +71,18 @@
     </article>
 
     <article>
-      <hgroup><h2>Sampling</h2></hgroup>
+      <h2>Sampling</h2>
       <p>Although there are sampling tools built into the Electribe, I find their editing tools to be too crude (specifically if I want to shorten a sample, which more often than not causes a distinct clipping sound).  Instead, I opt to edit the sample in a digital audio workstation, export it as a WAV to an Electribe-formatted SD card, and import it to the Electribe</p>
-      <p>
-        <ul>
-          <li>If you're not using an SD card already, navigate to the formatting tool inside of the display menu to format a new SD card.</li>
-          <li>Turn off the Electribe and remove the SD card</li>
-          <li>In your digital audio workstation on your computer, make all your edits/add effects and bounce a WAV file of the exact length you want to use in the Electribe</li>
-          <li>Connect the SD card to your computer, and place a copy of the WAV file in the Samples folder.  This is a good time to copy the contents of the entire SD card to a safe place.</li>
-          <li>Insert the SD card in the Electribe</li>
-          <li>The Electribe automatically loads all samples from the SD card into its internal drive.  This is done by <em>overwriting</em> the current samples folder stored internally.  <strong>If you switch SD cards without transferring sample data between the cards, keep in mind that you will be erasing the current contents of the internal Sample folder with the contents of your new Sample folder (which may delete internal Samples).</strong> I'm not sure if this applies to preset sounds as well, but it's all the more reason to back up the contents of your SD card with regularity.</li>
-        </ul>
-      </p>
+
+      <ul>
+        <li>If you're not using an SD card already, navigate to the formatting tool inside of the display menu to format a new SD card.</li>
+        <li>Turn off the Electribe and remove the SD card</li>
+        <li>In your digital audio workstation on your computer, make all your edits/add effects and bounce a WAV file of the exact length you want to use in the Electribe</li>
+        <li>Connect the SD card to your computer, and place a copy of the WAV file in the Samples folder.  This is a good time to copy the contents of the entire SD card to a safe place.</li>
+        <li>Insert the SD card in the Electribe</li>
+        <li>The Electribe automatically loads all samples from the SD card into its internal drive.  This is done by <em>overwriting</em> the current samples folder stored internally.  <strong>If you switch SD cards without transferring sample data between the cards, keep in mind that you will be erasing the current contents of the internal Sample folder with the contents of your new Sample folder (which may delete internal Samples).</strong> I'm not sure if this applies to preset sounds as well, but it's all the more reason to back up the contents of your SD card with regularity.</li>
+      </ul>
+
     </article>
 
     <sup>*The manual indicates a completely different function for MFX Hold, and does not specify this needs to be done to send a Part to the MFX bus.  However, I've found that I can't apply the MFX to a Part without pressing this button.  I'll update as I get more information.</sup>
@@ -92,19 +91,18 @@
 
 <!-- REVIEW -->
   <section>
-    <hgroup><h2>What's wrong with the other Electribe resources</h2><hgroup>
+    <h2>What's wrong with the other Electribe resources</h2>
 
     <p>I mean the following in an Actionable, Specific, and Kind way, of course.  This is in reference to <a href="http://www.practical-music-production.com/">Practical Music Production</a>.</p>
 
-    <p>Good
+    <p>Good</p>
     <ul>
       <li>grid provides engaging alternative to navbar</li>
       <li>slider provides users a quick guided summary of the site</li>
       <li>social media icons are in SVG format</li>
     </ul>
-    </p>
 
-    <p>Bad
+    <p>Bad</p>
     <ul>
       <li>use of label tag in association with something other than an input tag (I may be wrong about this, W3C explicitly states that it's used in conjunction with an input tag, but MDN describes it as a bit more flexible</li>
       <li>the whitespace is excessive, and makes for a less smooth reading experience</li>
@@ -113,7 +111,7 @@
       <li>relying on break tag for spacing</li>
       <li>unstyled bullets look unpolished</li>
     </ul>
-    </p>
+
   </section>
 
 <!-- SUBMIT QUESTIONS -->
