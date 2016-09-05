@@ -7,60 +7,119 @@
 <body>
   <header>
 
+<!-- TITLE -->
     <hgroup>
-      <h1><!-- title --></h1>
+      <h1>Learning the Electribe 2</h1>
     </hgroup>
 
-    <nav><!-- workflow, resources --></nav>
+    <nav>
+      <ul>
+          <li>Workflow</li>
+          <li>Resources</li>
+      </ul>
+    </nav>
 
     <img src="" alt=""><!-- hero image -->
 
   </header>
 
+<!-- INTRO -->
   <section>
-    <hgroup><h2><!-- intro heading (each section will include heading) --></h2></hgroup>
-    <p><!-- intro: why, cultural implication --></p>
+    <hgroup><h2>Introduction</h2></hgroup>
+    <p>The Korg Electribe 2 is a popular music production station/sampler/sequencer.  It comes with a large bank of "radio ready" preset sounds, and seems to lost a little cred amongst underground electronic and noise musicians because of its ability to provide pre-baked compositions.  However, it has fairly granular controls over sound for a cheap-ish workstation, and I've really enjoyed using it to become more comfortable with sequencing in composition.</p>
+    <p>This blog is a compilation of my expansions on the Electribe user manuals, as well as an exploration the workflow that works for me.</p>
   </section>
 
+<!-- DEMO -->
   <section>
-    <hgroup><h2></h2></hgroup>
-    <!-- demo -->
+    <hgroup><h2>What it can do</h2></hgroup>
+    <iframe width="420" height="315"
+src="https://youtu.be/6TELjVbCq1Y">
+    </iframe>
   </section>
 
   <main>
 
+<!-- ARTICLES -->
     <article>
-      <hgroup><h2><!-- MFX vs. IFX --></h2><hgroup>
-      <p></p>
+      <hgroup><h2>IFX vs. MFX</h2><hgroup>
+      <p>The Electribe allows each user to add effects in two ways: IFX (insert effects) or MFX (master effects) </p>
+
+      <hgroup><h3>IFX</h3></hgroup>
+      <p>You can add an effect to a Part by doing the following:
+        <ol>
+          <li>Press the Trigger button</li>
+          <li>On the Trigger Pad, press the Part that you'd like to apply the IFX to</li>
+          <li>Press the IFX on button</li>
+          <li>Use the Insert FX pot to select the effect you prefer</li>
+          <li>Use the Edit pot (under the Insert FX pot) to select the dry/wet ratio.  It's listed as a number as if it's a level, but dry/wet is implied.</li>
+        </ol>
+      </p>
+      <p>An Insert Effect is added to the singular Part before its audio hits the main audio outputs.  You can assign one insert effect per Part.</p>
+
+      <hgroup><h3>MFX</h3></hgroup>
+      <p>You can add an effect to a Part or multiple Parts by sending it to the MFX bus:</p>
+      <ol>
+        <li>Press the Trigger button</li>
+        <li>On the Trigger Pad, select the Part you'd like to apply the Master Effect to</li>
+        <li>Press the Master FX Button, as well as the Master Hold button, underneath the display.*</li>
+        <li>Press the MFX Send button under the Amp/EG section of pots to tell the Electribe you want to send the Part to the MFX bus</li>
+        <li>Select the effect that will be applied to all Parts being sent to the MFX bus by selecting the effect in the display menu (Menu button -> MFX Type, use Value knob to select).</li>
+      </ol>
+
+      <p>Keep in mind that you can only apply one MFX to every Part being sent to the MFX bus, and that the list of Insert Effects and list of Master Effects are different (ex: there is no reverb IFX, unfortunately)</p>
+
     </article>
 
     <article>
-      <hgroup><h2><!-- Sampling --></h2></hgroup>
+      <hgroup><h2>Sampling</h2></hgroup>
+      <p>Although there are sampling tools built into the Electribe, I find their editing tools to be too crude (specifically if I want to shorten a sample, which more often than not causes a distinct clipping sound).  Instead, I opt to edit the sample in a digital audio workstation, export it as a WAV to an Electribe-formatted SD card, and import it to the Electribe</p>
       <p>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>If you're not using an SD card already, navigate to the formatting tool inside of the display menu to format a new SD card.</li>
+          <li>Turn off the Electribe and remove the SD card</li>
+          <li>In your digital audio workstation on your computer, make all your edits/add effects and bounce a WAV file of the exact length you want to use in the Electribe</li>
+          <li>Connect the SD card to your computer, and place a copy of the WAV file in the Samples folder.  This is a good time to copy the contents of the entire SD card to a safe place.</li>
+          <li>Insert the SD card in the Electribe</li>
+          <li>The Electribe automatically loads all samples from the SD card into its internal drive.  This is done by <em>overwriting</em> the current samples folder stored internally.  <strong>If you switch SD cards without transferring sample data between the cards, keep in mind that you will be erasing the current contents of the internal Sample folder with the contents of your new Sample folder (which may delete internal Samples).</strong> I'm not sure if this applies to preset sounds as well, but it's all the more reason to back up the contents of your SD card with regularity.</li>
         </ul>
       </p>
     </article>
 
-    <article>
-      <hgroup><h2><!-- Memory --></h2></hgroup>
-      <p></p>
-    </article>
+    <sup>*The manual indicates a completely different function for MFX Hold, and does not specify this needs to be done to send a Part to the MFX bus.  However, I've found that I can't apply the MFX to a Part without pressing this button.  I'll update as I get more information.</sup>
 
   </main>
 
   <section>
-    <hgroup><h2></h2><hgroup>
-    <p></p>
+    <hgroup><h2>What's wrong with the other Electribe resources</h2><hgroup>
+    <p>I mean the following in an Actionable, Specific, and Kind way, of course.  This is in reference to <a href="" alt="http://www.practical-music-production.com/">Practical Music Production</a>.</p>
+    <ul>
+      <li></li>
+    </ul>
     <!-- review of other website, link to resources page -->
   </section>
 
+<!-- SUBMIT QUESTIONS -->
   <section>
-    <form></form>
-    <!-- Comments -->
+
+    <p>Please let me know if you have any questions or concepts about the Electribe 2 that you'd like explored on this page!</p>
+
+    <form action="http://httpbin.org/" method="post">
+
+      <fieldset>
+        <label>What's your name?</label>
+        <input type="text" name="user_name">
+      </fieldset>
+
+      <fieldset>
+        <label>What's your question?</label>
+        <textarea name="question"></textarea>
+      </fieldset>
+
+      <button name="button" type="submit">Submit</button>
+
+    </form>
+
   </section>
 
 
