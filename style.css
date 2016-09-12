@@ -3,6 +3,7 @@ body {
   color: #575757;
   font-family: 'Raleway', sans-serif;
   font-size: 1.2em;
+  padding: 35px;
 }
 
 h1, h2, h3 {
@@ -44,4 +45,13 @@ a:visited{
 img#hero {
   display: block;
   margin: auto;
+}
+
+nav > ul {
+  list-style-type: none;
+}
+
+nav > ul li {
+  display: inline;
+  padding-right: 25px;
 }
