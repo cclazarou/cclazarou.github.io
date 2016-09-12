@@ -4,6 +4,7 @@
 <head>
   <title>Electribe 2 Blog</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bitter|Raleway" rel="stylesheet">
 </head>
 <body>
 
@@ -20,19 +21,19 @@
     </nav>
 
 <!-- HERO IMG -->
-    <img src="assets/img/electribe_hero_medium.jpg" alt="electribe_2_on_a_pile_of_other_music_gear" height=480 width=640>
+    <img src="assets/img/electribe_hero_medium.jpg" alt="electribe_2_on_a_pile_of_other_music_gear" height=480 width=640 id="hero">
 
   </header>
 
 <!-- INTRO -->
-  <section>
+  <section class="overview">
     <h2>Introduction</h2>
     <p>The Korg Electribe 2 is a popular music production station/sampler/sequencer.  It comes with a large bank of "radio ready" preset sounds, and seems to lost a little cred amongst underground electronic and noise musicians because of its ability to provide pre-baked compositions.  However, it has fairly granular controls over sound for a cheap-ish workstation, and I've really enjoyed using it to become more comfortable with sequencing in composition.</p>
     <p>This blog is a compilation of my expansions on the Electribe user manuals, as well as an exploration the workflow that works for me.</p>
   </section>
 
 <!-- DEMO -->
-  <section>
+  <section class="overview">
     <h2>What it can do</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/6TELjVbCq1Y" frameborder="0" allowfullscreen></iframe>
     <!-- frameborder is deprecated, although it is what YouTube provides as embed code.  Use CSS once we get to that curriculum -->
@@ -62,7 +63,7 @@
       <ol>
         <li>Press the Trigger button</li>
         <li>On the Trigger Pad, select the Part you'd like to apply the Master Effect to</li>
-        <li>Press the Master FX Button, as well as the Master Hold button, underneath the display.*</li>
+        <li>Press the Master FX Button, as well as the Master Hold button, underneath the display.<a href="#fn1" id="r1">[1]</a></li>
         <li>Press the MFX Send button under the Amp/EG section of pots to tell the Electribe you want to send the Part to the MFX bus</li>
         <li>Select the effect that will be applied to all Parts being sent to the MFX bus by selecting the effect in the display menu (Menu button -> MFX Type, use Value knob to select).</li>
       </ol>
@@ -85,7 +86,7 @@
 
     </article>
 
-    <sup>*The manual indicates a completely different function for MFX Hold, and does not specify this needs to be done to send a Part to the MFX bus.  However, I've found that I can't apply the MFX to a Part without pressing this button.  I'll update as I get more information.</sup>
+    <sup id="fn1"><a href="r1">[1]</a>The manual indicates a completely different function for MFX Hold, and does not specify this needs to be done to send a Part to the MFX bus.  However, I've found that I can't apply the MFX to a Part without pressing this button.  I'll update as I get more information.</sup>
 
   </main>
 
