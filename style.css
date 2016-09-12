@@ -32,6 +32,11 @@ section.overview {
   margin: 35px;
 }
 
-span.asterisk {
-  font-size: 2em;
+a, a:link, a:focus, a:hover, a:active {
+  color: #d23607;
+  text-decoration: none;
+}
+
+a:visited{
+  color: #975d57;
 }
