@@ -2,6 +2,7 @@ body {
   background-image: url("assets/img/fan.png");
   color: #575757;
   font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
 }
 
 h1, h2, h3 {
@@ -23,4 +24,14 @@ footer {
   margin: auto;
 }
 
-aside
+section.overview {
+  background-color: #575757;
+  color: white;
+  border-radius: 25px;
+  padding: 35px;
+  margin: 35px;
+}
+
+span.asterisk {
+  font-size: 2em;
+}
