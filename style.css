@@ -10,3 +10,9 @@ article {
   padding: 35px;
   margin: 35px
 }
+
+footer {
+  width: 35%;
+  min-width: 280px;
+  margin: auto;
+}
