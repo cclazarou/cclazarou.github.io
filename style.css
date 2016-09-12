@@ -40,3 +40,8 @@ a, a:link, a:focus, a:hover, a:active {
 a:visited{
   color: #975d57;
 }
+
+img#hero {
+  display: block;
+  margin: auto;
+}
