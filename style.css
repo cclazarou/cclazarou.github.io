@@ -1,6 +1,12 @@
 body {
   background-image: url("assets/img/fan.png");
-  color: #333333;
+  color: #575757;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Bitter', serif;
+  color: #d23607;
 }
 
 article {
